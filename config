@@ -1,0 +1,16 @@
+surge_ruleset=苹果,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list
+surge_ruleset=微软,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
+surge_ruleset=国内,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+surge_ruleset=国内,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIp.list
+surge_ruleset=国外,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
+surge_ruleset=最终,[]FINAL
+
+custom_proxy_group=PROXY`select`.*
+custom_proxy_group=苹果`select`[]DIRECT`[]PROXY
+custom_proxy_group=微软`select`[]DIRECT`[]PROXY
+custom_proxy_group=国内`select`[]DIRECT`[]PROXY
+custom_proxy_group=国外`select`[]DIRECT`[]PROXY
+custom_proxy_group=最终`select`[]DIRECT`[]PROXY
+
+enable_rule_generator=true
+overwrite_original_rules=true
